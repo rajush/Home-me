@@ -1,0 +1,24 @@
+/*
+ * Custom Styling
+ */
+
+ /* Navbar */
+ @media (min-width: 768px){
+    .navbar-right {
+        display: none;
+    }
+}
+ .navbar {
+   border-radius: 0;
+ }
+ /* Navbar */
+
+.jumbotron{
+    margin-top: 10px;
+}
+.breadcrumb > li{
+    padding-right: 2px;
+}
+.pagenav-top{
+    margin-top: 10px !important;
+}

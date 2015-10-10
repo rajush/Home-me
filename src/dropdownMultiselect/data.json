@@ -1,0 +1,451 @@
+[ {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "DFDSDS",
+    "StoreId": 8013
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "TEST STORE",
+    "StoreId": 8014
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "NY OFF-SITE",
+    "StoreId": 8101
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 17,
+    "StoreDesc": "FL HOLD AND FLOW",
+    "StoreId": 8173
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 17,
+    "StoreDesc": "SELL-OFF BA",
+    "StoreId": 8174
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 15,
+    "StoreDesc": "EATON CENTRE",
+    "StoreId": 8356
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 15,
+    "StoreDesc": "SHERWAY GARDENS",
+    "StoreId": 8357
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "NEW YORK",
+    "StoreId": 8601
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "BEVERLY HILLS",
+    "StoreId": 8603
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "TYSONS",
+    "StoreId": 8604
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "SANTA BARBARA MAIN",
+    "StoreId": 8607
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "NEW ORLEANS",
+    "StoreId": 8608
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "PALM BEACH GARDENS",
+    "StoreId": 8610
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "PALM DESERT",
+    "StoreId": 8612
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "BIRMINGHAM",
+    "StoreId": 8613
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 11,
+    "StoreDesc": "CINCINNATI",
+    "StoreId": 8618
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "SARASOTA 2",
+    "StoreId": 8619
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 11,
+    "StoreDesc": "CHICAGO",
+    "StoreId": 8620
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "TULSA",
+    "StoreId": 8621
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "CHEVY CHASE",
+    "StoreId": 8623
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "BOCA RATON",
+    "StoreId": 8624
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "PHOENIX",
+    "StoreId": 8626
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 11,
+    "StoreDesc": "TROY",
+    "StoreId": 8628
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "ATLANTA",
+    "StoreId": 8629
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "BOSTON",
+    "StoreId": 8630
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "BALA CYNWYD",
+    "StoreId": 8631
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "MIAMI-DADE",
+    "StoreId": 8632
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "SARASOTA",
+    "StoreId": 8633
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "HOUSTON",
+    "StoreId": 8634
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "SOUTH COAST PLAZA",
+    "StoreId": 8636
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "BAL HARBOUR",
+    "StoreId": 8637
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 11,
+    "StoreDesc": "ST. LOUIS",
+    "StoreId": 8639
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 11,
+    "StoreDesc": "BEACHWOOD",
+    "StoreId": 8641
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "PALM BEACH",
+    "StoreId": 8643
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "LAS VEGAS",
+    "StoreId": 8645
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "SAN FRANCISCO",
+    "StoreId": 8646
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "WALT WHITMAN",
+    "StoreId": 8654
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "BROOKFIELD PLACE",
+    "StoreId": 8655
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 18,
+    "StoreDesc": "STAMFORD",
+    "StoreId": 8656
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "SAN ANTONIO",
+    "StoreId": 8657
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "SAN JUAN",
+    "StoreId": 8659
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 13,
+    "StoreDesc": "HAWAII",
+    "StoreId": 8660
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "FORT MYERS",
+    "StoreId": 8664
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 18,
+    "StoreDesc": "ORLANDO",
+    "StoreId": 8665
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "BRICKELL CITY CENTRE",
+    "StoreId": 8668
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "NAPLES",
+    "StoreId": 8669
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "RICHMOND",
+    "StoreId": 8671
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "GREENWICH",
+    "StoreId": 8672
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 12,
+    "StoreDesc": "RALEIGH",
+    "StoreId": 8673
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "CHEVY CHASE MEN'S",
+    "StoreId": 8674
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 11,
+    "StoreDesc": "COLUMBUS",
+    "StoreId": 8675
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 10,
+    "StoreDesc": "SHORT HILLS",
+    "StoreId": 8678
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 11,
+    "StoreDesc": "INDIANAPOLIS",
+    "StoreId": 8679
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 14,
+    "StoreDesc": "SAKS DIRECT",
+    "StoreId": 8689
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 16,
+    "StoreDesc": "COMPANY STORE",
+    "StoreId": 8691
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 16,
+    "StoreDesc": "FL  NYC PHOTO STUDIO",
+    "StoreId": 8694
+}, {
+    "ChainDesc": null,
+    "ChainId": 8,
+    "RegionId": 17,
+    "StoreDesc": "REASSORT",
+    "StoreId": 8805
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "LAWRENCEVILL",
+    "StoreId": 79
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "DCM3 HISTORY",
+    "StoreId": 291
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "CANADA O5",
+    "StoreId": 293
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "NSSF HISTORY",
+    "StoreId": 383
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "VANCOUVER-VLC",
+    "StoreId": 507
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "ABERDEEN DC",
+    "StoreId": 574
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "WBDC CTR",
+    "StoreId": 575
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "LAVERGNE DC",
+    "StoreId": 585
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "TNDC FL RTV",
+    "StoreId": 586
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "TORONTO-TLC",
+    "StoreId": 596
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "PERFORMANCE TEAM WES",
+    "StoreId": 597
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "ONTARIO DC",
+    "StoreId": 693
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "STORE DIR RT",
+    "StoreId": 700
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "EAST COAST",
+    "StoreId": 775
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "NSSE HISTORY",
+    "StoreId": 783
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "OFDC RTVHIST",
+    "StoreId": 791
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "RETURN TO VENDOR",
+    "StoreId": 857
+}, {
+    "ChainDesc": null,
+    "ChainId": 0,
+    "RegionId": 0,
+    "StoreDesc": "DIRECT TO STORE",
+    "StoreId": 9999
+} ]

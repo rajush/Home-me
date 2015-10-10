@@ -1,0 +1,128 @@
+<h4>You clicked "List"</h4>
+<!-- <ul>
+    <li ng-repeat="dog in dogs">{{ dog }}</li>
+</ul> -->
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="form-group">
+            <label class="control-label">
+                <small>Event:</small>
+            </label>
+            <!-- <div loading-rectangle ng-if="isLoading != false"></div> -->
+            <select class="form-control" name="event" ng-options="item.EventId + ' - ' + item.EventDescription for item in eventIdSelector" ng-model="selected.Event" ng-change="selectEvent()">
+                <option value="" disabled> Select Event </option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-5 col-md-offset-2">
+        <div class="alert alert-info dragAndDropAlert">
+            <i class="fa fa-lightbulb-o"></i> Drag and drop the items between the two tables.
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div sv-root class="multi-sortable">
+
+        <!--************* example -->
+        <div class="col-md-5">
+            <table sv-part="fixtureTagData.leftData" class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="area in fixtureTagData.leftData" sv-element>
+                        <td>{{area.Area}}</td>
+                        <td>{{area.Description}}</td>
+                        <td>{{area.Qty}}</td>
+                        <td>{{area.Location}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--************* example -->
+
+        <div class="col-md-2 text-center arow-iconColumn">
+            <div popover-placement="top" popover="Drag the item between tables!">
+                <div>
+                    <i class="fa fa-2x fa-angle-right hidden-xs hidden-sm"></i>
+                    <i class="fa fa-2x fa-angle-down hidden-md hidden-lg"></i>
+                    <i class="fa fa-2x fa-angle-up hidden-md hidden-lg"></i>
+                </div>
+                <div class="top5">
+                    <i class="fa fa-2x fa-angle-left hidden-xs hidden-sm"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--************* example -->
+        <div class="col-md-5">
+            <table sv-part="fixtureTagData.rightData" class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="area in fixtureTagData.rightData" sv-element>
+                        <td>{{area.Area}}</td>
+                        <td>{{area.Description}}</td>
+                        <td>{{area.Qty}}</td>
+                        <td>{{area.Location}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--************* example -->
+
+    </div>
+
+    <pre ng-bind="printArray(fixtureTagData.rightData)"></pre>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- <button class="btn btn-success" type="button" ng-click="printArray(fixtureTagData.rightData)"><i class="fa fa-print"></i> PRINT</button> -->
+        <button class="btn btn-success" type="button" ng-click="printArray(fixtureTagData.rightData)"><i class="fa fa-print"></i> PRINT</button>
+
+        <!-- The following tag exists to make sure the font file 'Code 128' is used and cached prior to the print window popping up. Please do not remove it. -->
+        <span style="font-family: 'Code 128'; visibility: hidden;" aria-hidden="true">DO NOT REMOVE THIS TAG FROM THE PAGE</span>
+
+        <span class="label label-primary pull-right" style="height: 34px; line-height: 29px; font-size:10pt; font-weight: 400; padding-left: 20px; padding-right: 20px;">
+
+            <span>
+                Tags to be printed:
+            </span>
+
+            <i class="fa fa-tags" style="padding-left: 20px; padding-right: 20px;"></i>
+
+            <span ng-bind="printArray(fixtureTagData.rightData)">
+                <!--{{tags}}-->
+            </span>
+
+            <span style="padding-left: 20px;">
+                Pages needed:
+            </span>
+
+            <i class="fa fa-file" style="padding-left: 20px; padding-right: 20px;"></i>
+
+            <span>
+                {{pages}}
+            </span>
+
+        </span>
+
+    </div>
+
+</div>
