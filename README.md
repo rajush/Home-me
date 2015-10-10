@@ -1,2 +1,2 @@
 # Home-me
-My idea box.
+Just an idea box for now.
