@@ -1,6 +1,6 @@
 'use strict';
 
-var routerApp = angular.module( 'routerApp', [ 'ui.router', 'page.nav.tabs', 'dropdown-multiselect' ] );
+var routerApp = angular.module( 'routerApp', [ 'ui.router', 'ngTouch', 'page.nav.tabs', 'dropdown-multiselect' ] );
 
 routerApp.config( function ( $stateProvider, $urlRouterProvider ) {
 
@@ -35,7 +35,7 @@ routerApp.config( function ( $stateProvider, $urlRouterProvider ) {
     // nested list with just some random string data
     .state( 'main.home.paragraph', {
         url: '/home/paragraph',
-        template: '<div class="well well - lg"><h4 class="text - success">You clicked Paragraph</h4>' + 'I could sure use a drink right now.</div>',
+        templateUrl: 'partial-home-paragraph.html',
         controller: 'ParagraphController'
     } )
 
@@ -67,6 +67,20 @@ routerApp.config( function ( $stateProvider, $urlRouterProvider ) {
     $urlRouterProvider.otherwise( '/main/home' );
 
 } );
+
+routerApp.run( [ "$rootScope", "$window", "$state", "$anchorScroll", function ( $rootScope, $window, $state, $anchorScroll ) {
+    // $( "html, body" ).animate( {
+    //     scrollTop: 0
+    // }, 200 );
+
+    // $rootScope.$on( '$stateChangeSuccess', function () {
+    //     // $( "html, body" ).animate( {
+    //     //     scrollTop: 0
+    //     // }, 200 );
+    //     $window.scrollTo(0, 0)
+    //
+    // } )
+} ] );
 
 routerApp.controller( 'MainController', function ( $scope, PageNavTabsService ) {
     //get tab name and bind to view
@@ -201,131 +215,144 @@ routerApp.controller( 'AnalyticsController', function ( $scope ) {
 
     $scope.options = [ {
         'Id': 1,
+        'StoreDesc': 'DFDSDS',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 10,
-        'StoreDesc': 'DFDSDS',
         'StoreId': 8013
     }, {
         'Id': 2,
+        'StoreDesc': 'TEST STORE',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 10,
-        'StoreDesc': 'TEST STORE',
         'StoreId': 8014
     }, {
         'Id': 3,
+        'StoreDesc': 'NY OFF-SITE',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 10,
-        'StoreDesc': 'NY OFF-SITE',
         'StoreId': 8101
     }, {
         'Id': 4,
+        'StoreDesc': 'FL HOLD AND FLOW',
         'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 17,
-        'StoreDesc': 'FL HOLD AND FLOW',
         'StoreId': 8173
     }, {
         'Id': 5,
+        'StoreDesc': 'SELL-OFF BA',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 17,
-        'StoreDesc': 'SELL-OFF BA',
         'StoreId': 8174
     }, {
         'Id': 6,
+        'StoreDesc': 'EATON CENTRE',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 15,
-        'StoreDesc': 'EATON CENTRE',
         'StoreId': 8356
     }, {
         'Id': 7,
+        'StoreDesc': 'SHERWAY GARDENS',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 15,
-        'StoreDesc': 'SHERWAY GARDENS',
         'StoreId': 8357
     }, {
         'Id': 8,
+        'StoreDesc': 'NEW YORK',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 10,
-        'StoreDesc': 'NEW YORK',
         'StoreId': 8601
     }, {
         'Id': 9,
+        'StoreDesc': 'BEVERLY HILLS',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 13,
-        'StoreDesc': 'BEVERLY HILLS',
         'StoreId': 8603
     }, {
         'Id': 10,
+        'StoreDesc': 'TYSONS',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 10,
-        'StoreDesc': 'TYSONS',
         'StoreId': 8604
     }, {
         'Id': 11,
+        'StoreDesc': 'SANTA BARBARA MAIN',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 13,
-        'StoreDesc': 'SANTA BARBARA MAIN',
         'StoreId': 8607
     }, {
         'Id': 12,
+        'StoreDesc': 'NEW ORLEANS',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 12,
-        'StoreDesc': 'NEW ORLEANS',
         'StoreId': 8608
     }, {
         'Id': 13,
+        'StoreDesc': 'PALM BEACH GARDENS',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 12,
-        'StoreDesc': 'PALM BEACH GARDENS',
         'StoreId': 8610
     }, {
         'Id': 14,
+        'StoreDesc': 'PALM DESERT',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 13,
-        'StoreDesc': 'PALM DESERT',
         'StoreId': 8612
     }, {
         'Id': 15,
+        'StoreDesc': 'BIRMINGHAM',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 12,
-        'StoreDesc': 'BIRMINGHAM',
         'StoreId': 8613
     }, {
         'Id': 16,
+        'StoreDesc': 'CINCINNATI',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 11,
-        'StoreDesc': 'CINCINNATI',
         'StoreId': 8618
     }, {
         'Id': 17,
+        'StoreDesc': 'SARASOTA 2',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 12,
-        'StoreDesc': 'SARASOTA 2',
         'StoreId': 8619
     }, {
         'Id': 18,
+        'StoreDesc': 'CHICAGO',
         // 'ChainDesc': null,
         'ChainId': 8,
         'RegionId': 11,
-        'StoreDesc': 'CHICAGO',
         'StoreId': 8620
     } ];
+
+
+    $scope.options = [];
+    for (var i = 0; i < 100; i++) {
+        var obj = {};
+        obj.Id = i;
+        obj.StoreDesc = 'New Store ' + i;
+        obj.ChainId = 'Chain ' + i;
+        obj.RegionId = 'Region ' + 0 + i;
+        obj.StoreId = i;
+
+        $scope.options.push(obj);
+    }
 
     $scope.config = {
         options: $scope.options,
@@ -336,7 +363,14 @@ routerApp.controller( 'AnalyticsController', function ( $scope ) {
         icon: 'fa fa-check-square-o',
         // displayBadge: false,
         filter: true,
-        // height: '100px'
+        height: '200px',
+        multiSelect: true,
+        // preSelectAll: true
     };
+
+$scope.selected = function(selectedItems){
+    // console.log(selectedItems);
+}
+
 
 } );

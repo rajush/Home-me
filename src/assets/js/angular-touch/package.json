@@ -1,0 +1,51 @@
+{
+  "name": "angular-touch",
+  "version": "1.3.10",
+  "description": "AngularJS module for touch events and helpers for touch-enabled devices",
+  "main": "angular-touch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular.js.git"
+  },
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "touch",
+    "client-side"
+  ],
+  "author": {
+    "name": "Angular Core Team",
+    "email": "angular-core+npm@google.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "homepage": "http://angularjs.org",
+  "gitHead": "bb9f292ddef4e117768b092b02dc7828bc5190df",
+  "_id": "angular-touch@1.3.10",
+  "_shasum": "5160e34040183e8488732ed689b0ab492bca50c1",
+  "_from": "angular-touch@1.3.10",
+  "_npmVersion": "2.0.2",
+  "_nodeVersion": "0.10.26",
+  "_npmUser": {
+    "name": "angularcore",
+    "email": "angular-core+npm@google.com"
+  },
+  "maintainers": [
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "dist": {
+    "shasum": "5160e34040183e8488732ed689b0ab492bca50c1",
+    "tarball": "https://registry.npmjs.org/angular-touch/-/angular-touch-1.3.10.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-touch/-/angular-touch-1.3.10.tgz"
+}

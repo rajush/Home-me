@@ -5,24 +5,24 @@ var browserSync = require( 'browser-sync' );
 
 // Static server
 gulp.task( 'browser-sync', function () {
-  browserSync( {
-    server: {
-      baseDir: './src'
-    },
-    ui: {
-      port: 3001
-    },
-    port: 8080,
-    files: './src/**/*',
-    ghostMode: {
-      clicks: true,
-      forms: true,
-      scroll: true
-    },
-    browser: 'google chrome',
-    notify: false,
-    injectChanges: true
-  } );
+    browserSync( {
+        server: {
+            baseDir: './src'
+        },
+        ui: {
+            port: 3001
+        },
+        port: 8080,
+        files: './src/**/*',
+        ghostMode: {
+            clicks: true,
+            forms: true,
+            scroll: true
+        },
+        browser: 'google chrome',
+        notify: false,
+        injectChanges: true
+    } );
 } );
 
 gulp.task( 'default', [ 'browser-sync' ] );

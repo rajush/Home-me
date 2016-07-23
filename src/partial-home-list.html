@@ -1,33 +1,28 @@
-<h4>You clicked "List"</h4>
-<!-- <ul>
-    <li ng-repeat="dog in dogs">{{ dog }}</li>
-</ul> -->
-
 <div class="row">
-    <div class="col-md-5">
+    <div class="col-sm-12 col-md-5">
         <div class="form-group">
             <label class="control-label">
                 <small>Event:</small>
             </label>
-            <!-- <div loading-rectangle ng-if="isLoading != false"></div> -->
-            <select class="form-control" name="event" ng-options="item.EventId + ' - ' + item.EventDescription for item in eventIdSelector" ng-model="selected.Event" ng-change="selectEvent()">
-                <option value="" disabled> Select Event </option>
+            <select class="form-control" name="event" ng-change="selectEvent()" ng-model="selected.Event" ng-options="item.EventId + ' - ' + item.EventDescription for item in eventIdSelector">
+                <option disabled value="">
+                    Select Event
+                </option>
             </select>
         </div>
     </div>
-    <div class="col-md-5 col-md-offset-2">
+    <div class="col-sm-12 col-md-5 col-md-offset-2">
         <div class="alert alert-info dragAndDropAlert">
-            <i class="fa fa-lightbulb-o"></i> Drag and drop the items between the two tables.
+            <i class="fa fa-lightbulb-o"></i>
+            Drag and drop the items between the two tables.
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div sv-root class="multi-sortable">
-
-        <!--************* example -->
-        <div class="col-md-5">
-            <table sv-part="fixtureTagData.leftData" class="table table-bordered table-striped table-hover">
+    <div class="multi-sortable" sv-root>
+        <div class="col-sm-12 col-md-5">
+            <table class="table table-bordered table-striped table-hover" sv-part="fixtureTagData.leftData">
                 <thead>
                     <tr>
                         <th>Area</th>
@@ -46,9 +41,8 @@
                 </tbody>
             </table>
         </div>
-        <!--************* example -->
 
-        <div class="col-md-2 text-center arow-iconColumn">
+        <div class="col-sm-12 col-md-2 text-center arow-iconColumn">
             <div popover-placement="top" popover="Drag the item between tables!">
                 <div>
                     <i class="fa fa-2x fa-angle-right hidden-xs hidden-sm"></i>
@@ -61,9 +55,8 @@
             </div>
         </div>
 
-        <!--************* example -->
-        <div class="col-md-5">
-            <table sv-part="fixtureTagData.rightData" class="table table-bordered table-striped table-hover">
+        <div class="col-sm-12 col-md-5">
+            <table class="table table-bordered table-striped table-hover" sv-part="fixtureTagData.rightData">
                 <thead>
                     <tr>
                         <th>Area</th>
@@ -82,47 +75,61 @@
                 </tbody>
             </table>
         </div>
-        <!--************* example -->
 
     </div>
-
-    <pre ng-bind="printArray(fixtureTagData.rightData)"></pre>
 </div>
+
+<pre ng-bind="printArray(fixtureTagData.rightData)"></pre>
 
 <hr>
 
 <div class="row">
-    <div class="col-md-12">
-        <!-- <button class="btn btn-success" type="button" ng-click="printArray(fixtureTagData.rightData)"><i class="fa fa-print"></i> PRINT</button> -->
-        <button class="btn btn-success" type="button" ng-click="printArray(fixtureTagData.rightData)"><i class="fa fa-print"></i> PRINT</button>
-
-        <!-- The following tag exists to make sure the font file 'Code 128' is used and cached prior to the print window popping up. Please do not remove it. -->
-        <span style="font-family: 'Code 128'; visibility: hidden;" aria-hidden="true">DO NOT REMOVE THIS TAG FROM THE PAGE</span>
-
-        <span class="label label-primary pull-right" style="height: 34px; line-height: 29px; font-size:10pt; font-weight: 400; padding-left: 20px; padding-right: 20px;">
-
+    <div class="col-xs-8 col-sm-8 col-md-8">
+        <span class="label label-primary">
             <span>
                 Tags to be printed:
+                <i class="fa fa-tags" style="padding-right: 10px;"></i>
             </span>
-
-            <i class="fa fa-tags" style="padding-left: 20px; padding-right: 20px;"></i>
-
-            <span ng-bind="printArray(fixtureTagData.rightData)">
-                <!--{{tags}}-->
-            </span>
-
-            <span style="padding-left: 20px;">
-                Pages needed:
-            </span>
-
-            <i class="fa fa-file" style="padding-left: 20px; padding-right: 20px;"></i>
-
-            <span>
-                {{pages}}
-            </span>
-
+            <span ng-bind="printArray(fixtureTagData.rightData)"></span>
         </span>
-
+    </div>
+    <div class="col-xs-4 col-sm-4">
+        <button class="btn btn-success" ng-click="printArray(fixtureTagData.rightData)" type="button">
+            <i class="fa fa-print"></i>
+            PRINT
+        </button>
     </div>
 
 </div>
+
+<!-- <div class="col-sm-12 col-md-12">
+    <button class="btn btn-success" ng-click="printArray(fixtureTagData.rightData)" type="button">
+        <i class="fa fa-print"></i>
+        PRINT
+    </button> -->
+
+<!-- The following tag exists to make sure the font file 'Code 128' is used and cached prior to the print window popping up. Please do not remove it. -->
+<!-- <span aria-hidden="true" style="font-family: 'Code 128'; visibility: hidden;">DO NOT REMOVE THIS TAG FROM THE PAGE</span>
+
+    <span class="label label-primary pull-right" style="height: 34px; line-height: 29px; font-size:10pt; font-weight: 400; padding-left: 20px; padding-right: 20px;">
+
+        <span>
+            Tags to be printed:
+        </span>
+
+        <i class="fa fa-tags" style="padding-left: 20px; padding-right: 20px;"></i>
+
+        <span ng-bind="printArray(fixtureTagData.rightData)"></span>
+
+        <span style="padding-left: 20px;">
+            Pages needed:
+        </span>
+
+        <i class="fa fa-file" style="padding-left: 20px; padding-right: 20px;"></i>
+
+        <span>
+            {{pages}}
+        </span>
+
+    </span>
+</div> -->

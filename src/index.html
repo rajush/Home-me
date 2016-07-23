@@ -2,14 +2,18 @@
 <html>
 
 <head>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS (load bootstrap) -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
-    <!-- <link rel="stylesheet" href="dropdownMultiselect/dropdown.css"> -->
-    <link rel="stylesheet" href="ng-dropdownMultiselect.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="assets/js/angular-dropdown-multiselect/src/angular-dropdownMultiselect.css">
+    <!-- <link rel="stylesheet" href="ng-dropdownMultiselect.css"> -->
+    <!-- <link rel="stylesheet" href="../../angular-dropdown-multiselect/src/angular-dropdownMultiselect.css"> -->
     <link rel="icon" href="../../favicon.ico">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,10 +38,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a ui-sref="home">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a ui-sref="about">About</a></li>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Export</a></li>
+                    <li data-toggle="collapse" data-target="#navbar"><a ui-sref="main.home.main">Home <span class="sr-only">(current)</span></a></li>
+                    <li data-toggle="collapse" data-target="#navbar"><a ui-sref="main.about">About</a></li>
+                    <li data-toggle="collapse" data-target="#navbar"><a ui-sref="main.analytics">Analytics</a></li>
+                    <li data-toggle="collapse" data-target="#navbar"><a>Export</a></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +49,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-5 col-sm-3 col-md-2 sidebar">
+            <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
                     <li><a ui-sref="main.home.main">Home <span class="sr-only">(current)</span></a></li>
                     <li><a ui-sref="main.about">About</a></li>
@@ -54,9 +58,9 @@
                 </ul>
             </div>
 
-            <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2">
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
                 <!-- MAIN CONTENT -->
-                <div ui-view autoscroll="false"></div>
+                <div ui-view autoscroll=""></div>
             </div>
 
         </div>
@@ -66,14 +70,16 @@
     <!-- <script src="assets/js/jquery/jquery.min.js"></script> -->
     <!-- <script src="assets/js/bootstrap/bootstrap.min.js"></script> -->
     <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-touch/angular-touch.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular.min.js"></script> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
     <script src="assets/js/angular-cookies.js"></script>
 
     <!-- CUSTOM - JS -->
     <script src="app.js"></script>
-    <!-- <script src="dropdownMultiselect/dropdownMultiselectDirective.js"></script> -->
-    <script src="ng-dropdownMultiselect.js"></script>
+    <script src="assets/js/angular-dropdown-multiselect/src/angular-dropdownMultiselect.js"></script>
+
+    <!-- <script src="../../angular-dropdown-multiselect/src/angular-dropdownMultiselect.js"></script> -->
     <script src="pageNavTabs/pageNavTabs.js"></script>
     <script src="pageNavTabs/NavTabsController.js"></script>
 
